@@ -1,0 +1,127 @@
+USER REGISTRATION
+
+API:https://election.celatatech.com/api/mobile/register
+
+Params:
+required-{
+name
+email
+password
+}
+
+notrequired-{
+address
+mobile
+imei
+image
+}
+
+return (
+if error : error
+if success:success,userID
+)
+==========================================================
+USER LOGIN
+
+API:https://election.celatatech.com/api/mobile/login
+
+Params:
+required-{
+email
+password
+}
+
+return (
+if error : error
+if success:success,user,organizer - (more detail about user)
+)
+
+*************************************************************
+API:https://election.celatatech.com/api/mobile/addData
+
+==========================================================
+HOUSEHOLD VISTS
+
+API:https://election.celatatech.com/api/mobile/addData
+
+Params:
+required-{
+type:HouseHoldVisits
+name
+phone
+address
+lat
+lng
+voteConfirm
+voteMaybe
+voteConvert
+voteSad
+voteNo
+secondVisit
+transport
+userID
+}
+
+notrequired-{
+image
+}
+==========================================================
+MEETINGS
+
+Params:
+required-{
+type:Meetings
+address
+lat
+lng
+userID
+participants
+}
+notrequired-{
+image
+}
+
+==========================================================
+CHARITIES
+
+Params:
+required-{
+type:Charities
+address
+lat
+lng
+userID
+participants
+}
+notrequired-{
+image
+}
+
+==========================================================
+ACTIVITIES
+
+Params:
+required-{
+type:Activities
+address
+lat
+lng
+userID
+participants
+benifitcount
+name       (this is society name)
+}
+notrequired-{
+image
+}
+=============================================================
+return (
+if error : error
+if success:success,data
+)
+**************************************************************
+
+
+
+
+
